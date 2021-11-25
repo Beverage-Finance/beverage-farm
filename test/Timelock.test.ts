@@ -91,4 +91,30 @@ describe("Timelock", function () {
     expect((await this.chef.poolInfo("1")).allocPoint).to.equal("100")
     expect(await this.chef.rewarder("1")).to.equal(this.dummy.address);
   })
+
+  it("should update sushi per block on MasterChef", async function () {
+    this.chef = await this.MasterChef.deploy(this.sushi.address, getBigNumber(1000), this.dev.address)    // initialize with 1000 sushi per block
+    await this.chef.transferOwnership(this.timelock.address, true, false)
+    const eta = (await latest()).add(duration.days(4))
+    await this.timelock
+      .connect(this.bob)
+      .queueTransaction(
+        this.chef.address,
+        "0",
+        "setSushiPerBlock(uint256)",
+        encodeParameters(["uint256"], ["100000000000000000000"]),   // 100 sushi per block
+        eta
+      )
+    await increase(duration.days(4))
+    await this.timelock
+      .connect(this.bob)
+      .executeTransaction(
+        this.chef.address,
+        "0",
+        "setSushiPerBlock(uint256)",
+        encodeParameters(["uint256"], ["100000000000000000000"]),   // 100 sushi per block
+        eta
+      )
+    expect(await this.chef.sushiPerBlock()).to.equal("100000000000000000000")
+  })
 })

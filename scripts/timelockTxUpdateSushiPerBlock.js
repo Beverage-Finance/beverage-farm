@@ -25,7 +25,7 @@ async function main() {
   const value = '0';
   const signature = "setSushiPerBlock(uint256)";
   const data = utils.encodeParameters(["uint256"], ["100000000000000000000"]);   // 100 DRINK per block
-  const eta = (await utils.latest()).add(utils.duration.hours(48)).toString();   // 48 hour delay
+  const eta = (await utils.latest()).add(utils.duration.hours(49)).toString();   // 48 hour delay
   
   console.log({target, value, signature, data, eta});
 }

@@ -15,6 +15,7 @@ pragma solidity 0.6.12;
 
 // XXX: import "./SafeMath.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
+// import "hardhat/console.sol";
 
 contract Timelock {
     using SafeMath for uint;
@@ -117,6 +118,10 @@ contract Timelock {
         } else {
             callData = abi.encodePacked(bytes4(keccak256(bytes(signature))), data);
         }
+
+        // console.logString(signature);
+        // console.logBytes(data);
+        // console.logBytes(callData);
 
         // solium-disable-next-line security/no-call-value
         (bool success, bytes memory returnData) = target.call.value(value)(callData);
