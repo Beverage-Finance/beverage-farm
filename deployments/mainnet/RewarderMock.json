@@ -1,0 +1,132 @@
+{
+  "address": "0x6f2803D036B6dD81FC5574a78ECB9E71E8E95918",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_rewardMultiplier",
+          "type": "uint256"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "_rewardToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_MASTERCHEF_V2",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sushiAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "onSushiReward",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "pid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sushiAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "pendingTokens",
+      "outputs": [
+        {
+          "internalType": "contract IERC20[]",
+          "name": "rewardTokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "rewardAmounts",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x9279be2c78b3accc211db380b8a0b801608f79c3595df32b286a418fba6b4b21",
+  "receipt": {
+    "to": null,
+    "from": "0xfCC8C70A7Ea0F588135B7B8892995Ada7c0117b2",
+    "contractAddress": "0x6f2803D036B6dD81FC5574a78ECB9E71E8E95918",
+    "transactionIndex": 3,
+    "gasUsed": "395521",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x746ab1efff63cdb372e648c1922a1294c41e06374b0e295dac90fa1f745ad293",
+    "transactionHash": "0x9279be2c78b3accc211db380b8a0b801608f79c3595df32b286a418fba6b4b21",
+    "logs": [],
+    "blockNumber": 14327156,
+    "cumulativeGasUsed": "809984",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "20000000000000000",
+    "0x75c7a5ee75b63792f074c698e1e2004676e8589e",
+    "0xDc5BBb7f25a05259b2bD559936771f8Fc0E2c4cb"
+  ],
+  "solcInputHash": "f8e29c7b3a2c2dda7a266d8ae2744468",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_rewardMultiplier\",\"type\":\"uint256\"},{\"internalType\":\"contract IERC20\",\"name\":\"_rewardToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_MASTERCHEF_V2\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"sushiAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"onSushiReward\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"pid\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"sushiAmount\",\"type\":\"uint256\"}],\"name\":\"pendingTokens\",\"outputs\":[{\"internalType\":\"contract IERC20[]\",\"name\":\"rewardTokens\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"rewardAmounts\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/RewarderMock.sol\":\"RewarderMock\"},\"evmVersion\":\"istanbul\",\"libraries\":{\"__CACHE_BREAKER__\":\"0x00000000d41867734bbee4c6863d9255b2b06ac1\"},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@boringcrypto/boring-solidity/contracts/interfaces/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.6.12;\\n\\ninterface IERC20 {\\n    function totalSupply() external view returns (uint256);\\n    function balanceOf(address account) external view returns (uint256);\\n    function allowance(address owner, address spender) external view returns (uint256);\\n    function approve(address spender, uint256 amount) external returns (bool);\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    // EIP 2612\\n    function permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external;\\n}\",\"keccak256\":\"0xbc2bbe46ffb84b39aa0e39c925b071e3a2ce6e912f7f216619550a38bbf0f9b3\",\"license\":\"MIT\"},\"@boringcrypto/boring-solidity/contracts/libraries/BoringERC20.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity 0.6.12;\\n\\nimport \\\"../interfaces/IERC20.sol\\\";\\n\\nlibrary BoringERC20 {\\n    function safeSymbol(IERC20 token) internal view returns(string memory) {\\n        (bool success, bytes memory data) = address(token).staticcall(abi.encodeWithSelector(0x95d89b41));\\n        return success && data.length > 0 ? abi.decode(data, (string)) : \\\"???\\\";\\n    }\\n\\n    function safeName(IERC20 token) internal view returns(string memory) {\\n        (bool success, bytes memory data) = address(token).staticcall(abi.encodeWithSelector(0x06fdde03));\\n        return success && data.length > 0 ? abi.decode(data, (string)) : \\\"???\\\";\\n    }\\n\\n    function safeDecimals(IERC20 token) internal view returns (uint8) {\\n        (bool success, bytes memory data) = address(token).staticcall(abi.encodeWithSelector(0x313ce567));\\n        return success && data.length == 32 ? abi.decode(data, (uint8)) : 18;\\n    }\\n\\n    function safeTransfer(IERC20 token, address to, uint256 amount) internal {\\n        (bool success, bytes memory data) = address(token).call(abi.encodeWithSelector(0xa9059cbb, to, amount));\\n        require(success && (data.length == 0 || abi.decode(data, (bool))), \\\"BoringERC20: Transfer failed\\\");\\n    }\\n\\n    function safeTransferFrom(IERC20 token, address from, address to, uint256 amount) internal {\\n        (bool success, bytes memory data) = address(token).call(abi.encodeWithSelector(0x23b872dd, from, to, amount));\\n        require(success && (data.length == 0 || abi.decode(data, (bool))), \\\"BoringERC20: TransferFrom failed\\\");\\n    }\\n}\",\"keccak256\":\"0x74e55a994e33a3d6ca777c4adbd573b5427e33030c1e8603dc09f07b5f4d0a51\",\"license\":\"UNLICENSED\"},\"@boringcrypto/boring-solidity/contracts/libraries/BoringMath.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.6.12;\\n// a library for performing overflow-safe math, updated with awesomeness from of DappHub (https://github.com/dapphub/ds-math)\\nlibrary BoringMath {\\n    function add(uint256 a, uint256 b) internal pure returns (uint256 c) {require((c = a + b) >= b, \\\"BoringMath: Add Overflow\\\");}\\n    function sub(uint256 a, uint256 b) internal pure returns (uint256 c) {require((c = a - b) <= a, \\\"BoringMath: Underflow\\\");}\\n    function mul(uint256 a, uint256 b) internal pure returns (uint256 c) {require(b == 0 || (c = a * b)/b == a, \\\"BoringMath: Mul Overflow\\\");}\\n    function to128(uint256 a) internal pure returns (uint128 c) {\\n        require(a <= uint128(-1), \\\"BoringMath: uint128 Overflow\\\");\\n        c = uint128(a);\\n    }\\n    function to64(uint256 a) internal pure returns (uint64 c) {\\n        require(a <= uint64(-1), \\\"BoringMath: uint64 Overflow\\\");\\n        c = uint64(a);\\n    }\\n    function to32(uint256 a) internal pure returns (uint32 c) {\\n        require(a <= uint32(-1), \\\"BoringMath: uint32 Overflow\\\");\\n        c = uint32(a);\\n    }\\n}\\n\\nlibrary BoringMath128 {\\n    function add(uint128 a, uint128 b) internal pure returns (uint128 c) {require((c = a + b) >= b, \\\"BoringMath: Add Overflow\\\");}\\n    function sub(uint128 a, uint128 b) internal pure returns (uint128 c) {require((c = a - b) <= a, \\\"BoringMath: Underflow\\\");}\\n}\\n\\nlibrary BoringMath64 {\\n    function add(uint64 a, uint64 b) internal pure returns (uint64 c) {require((c = a + b) >= b, \\\"BoringMath: Add Overflow\\\");}\\n    function sub(uint64 a, uint64 b) internal pure returns (uint64 c) {require((c = a - b) <= a, \\\"BoringMath: Underflow\\\");}\\n}\\n\\nlibrary BoringMath32 {\\n    function add(uint32 a, uint32 b) internal pure returns (uint32 c) {require((c = a + b) >= b, \\\"BoringMath: Add Overflow\\\");}\\n    function sub(uint32 a, uint32 b) internal pure returns (uint32 c) {require((c = a - b) <= a, \\\"BoringMath: Underflow\\\");}\\n}\",\"keccak256\":\"0x697187e610e3fb6d83cbb7a21d3207acd587fee596efde089e48e159ff29687e\",\"license\":\"MIT\"},\"contracts/interfaces/IRewarder.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.6.12;\\nimport \\\"@boringcrypto/boring-solidity/contracts/libraries/BoringERC20.sol\\\";\\ninterface IRewarder {\\n    using BoringERC20 for IERC20;\\n    function onSushiReward(uint256 pid, address user, address recipient, uint256 sushiAmount, uint256 newLpAmount) external;\\n    function pendingTokens(uint256 pid, address user, uint256 sushiAmount) external view returns (IERC20[] memory, uint256[] memory);\\n}\\n\",\"keccak256\":\"0x1b5632385c9d0a0abc6d168cfacff67e40675eca46f65525fb3336e01cc4e3ac\",\"license\":\"MIT\"},\"contracts/mocks/RewarderMock.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.6.12;\\nimport \\\"../interfaces/IRewarder.sol\\\";\\nimport \\\"@boringcrypto/boring-solidity/contracts/libraries/BoringERC20.sol\\\";\\nimport \\\"@boringcrypto/boring-solidity/contracts/libraries/BoringMath.sol\\\";\\n\\n\\ncontract RewarderMock is IRewarder {\\n    using BoringMath for uint256;\\n    using BoringERC20 for IERC20;\\n    uint256 private immutable rewardMultiplier;\\n    IERC20 private immutable rewardToken;\\n    uint256 private constant REWARD_TOKEN_DIVISOR = 1e18;\\n    address private immutable MASTERCHEF_V2;\\n\\n    constructor (uint256 _rewardMultiplier, IERC20 _rewardToken, address _MASTERCHEF_V2) public {\\n        rewardMultiplier = _rewardMultiplier;\\n        rewardToken = _rewardToken;\\n        MASTERCHEF_V2 = _MASTERCHEF_V2;\\n    }\\n\\n    function onSushiReward (uint256, address user, address to, uint256 sushiAmount, uint256) onlyMCV2 override external {\\n        uint256 pendingReward = sushiAmount.mul(rewardMultiplier) / REWARD_TOKEN_DIVISOR;\\n        uint256 rewardBal = rewardToken.balanceOf(address(this));\\n        if (pendingReward > rewardBal) {\\n            rewardToken.safeTransfer(to, rewardBal);\\n        } else {\\n            rewardToken.safeTransfer(to, pendingReward);\\n        }\\n    }\\n    \\n    function pendingTokens(uint256 pid, address user, uint256 sushiAmount) override external view returns (IERC20[] memory rewardTokens, uint256[] memory rewardAmounts) {\\n        IERC20[] memory _rewardTokens = new IERC20[](1);\\n        _rewardTokens[0] = (rewardToken);\\n        uint256[] memory _rewardAmounts = new uint256[](1);\\n        _rewardAmounts[0] = sushiAmount.mul(rewardMultiplier) / REWARD_TOKEN_DIVISOR;\\n        return (_rewardTokens, _rewardAmounts);\\n    }\\n\\n    modifier onlyMCV2 {\\n        require(\\n            msg.sender == MASTERCHEF_V2,\\n            \\\"Only MCV2 can call this function.\\\"\\n        );\\n        _;\\n    }\\n  \\n}\\n\",\"keccak256\":\"0xfd9e3f185c398c79099f890938f32fb58838affaa5e5dd1845ba913a4c92e2bd\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60e060405234801561001057600080fd5b506040516106d43803806106d48339818101604052606081101561003357600080fd5b50805160208201516040909201516080919091526001600160601b0319606092831b811660a052911b1660c05260805160a05160601c60c05160601c61062e6100a6600039806101555250806101f452806102a252806102db52806103335250806101c252806103ab525061062e6000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80638bf637421461003b578063d63b3c491461007f575b600080fd5b61007d600480360360a081101561005157600080fd5b508035906001600160a01b0360208201358116916040810135909116906060810135906080013561014a565b005b6100b16004803603606081101561009557600080fd5b508035906001600160a01b03602082013516906040013561030b565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156100f55781810151838201526020016100dd565b50505050905001838103825284818151815260200191508051906020019060200280838360005b8381101561013457818101518382015260200161011c565b5050505090500194505050505060405180910390f35b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146101b15760405162461bcd60e51b81526004018080602001828103825260218152602001806105d86021913960400191505060405180910390fd5b6000670de0b6b3a76400006101e6847f00000000000000000000000000000000000000000000000000000000000000006103fb565b816101ed57fe5b04905060007f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166370a08231306040518263ffffffff1660e01b815260040180826001600160a01b0316815260200191505060206040518083038186803b15801561025f57600080fd5b505afa158015610273573d6000803e3d6000fd5b505050506040513d602081101561028957600080fd5b50519050808211156102ce576102c96001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016868361046d565b610302565b6103026001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016868461046d565b50505050505050565b60408051600180825281830190925260609182918291602080830190803683370190505090507f00000000000000000000000000000000000000000000000000000000000000008160008151811061035f57fe5b6001600160a01b039290921660209283029190910190910152604080516001808252818301909252606091816020016020820280368337019050509050670de0b6b3a76400006103cf867f00000000000000000000000000000000000000000000000000000000000000006103fb565b816103d657fe5b04816000815181106103e457fe5b602090810291909101015290969095509350505050565b60008115806104165750508082028282828161041357fe5b04145b610467576040805162461bcd60e51b815260206004820152601860248201527f426f72696e674d6174683a204d756c204f766572666c6f770000000000000000604482015290519081900360640190fd5b92915050565b604080516001600160a01b038481166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b178152925182516000946060949389169392918291908083835b602083106104ea5780518252601f1990920191602091820191016104cb565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461054c576040519150601f19603f3d011682016040523d82523d6000602084013e610551565b606091505b509150915081801561057f57508051158061057f575080806020019051602081101561057c57600080fd5b50515b6105d0576040805162461bcd60e51b815260206004820152601c60248201527f426f72696e6745524332303a205472616e73666572206661696c656400000000604482015290519081900360640190fd5b505050505056fe4f6e6c79204d4356322063616e2063616c6c20746869732066756e6374696f6e2ea26469706673582212205e6207fff3b1da86e80d0d3cc4d9b94282b12ea3cbf992c9beb84780017fd45264736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80638bf637421461003b578063d63b3c491461007f575b600080fd5b61007d600480360360a081101561005157600080fd5b508035906001600160a01b0360208201358116916040810135909116906060810135906080013561014a565b005b6100b16004803603606081101561009557600080fd5b508035906001600160a01b03602082013516906040013561030b565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156100f55781810151838201526020016100dd565b50505050905001838103825284818151815260200191508051906020019060200280838360005b8381101561013457818101518382015260200161011c565b5050505090500194505050505060405180910390f35b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146101b15760405162461bcd60e51b81526004018080602001828103825260218152602001806105d86021913960400191505060405180910390fd5b6000670de0b6b3a76400006101e6847f00000000000000000000000000000000000000000000000000000000000000006103fb565b816101ed57fe5b04905060007f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166370a08231306040518263ffffffff1660e01b815260040180826001600160a01b0316815260200191505060206040518083038186803b15801561025f57600080fd5b505afa158015610273573d6000803e3d6000fd5b505050506040513d602081101561028957600080fd5b50519050808211156102ce576102c96001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016868361046d565b610302565b6103026001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016868461046d565b50505050505050565b60408051600180825281830190925260609182918291602080830190803683370190505090507f00000000000000000000000000000000000000000000000000000000000000008160008151811061035f57fe5b6001600160a01b039290921660209283029190910190910152604080516001808252818301909252606091816020016020820280368337019050509050670de0b6b3a76400006103cf867f00000000000000000000000000000000000000000000000000000000000000006103fb565b816103d657fe5b04816000815181106103e457fe5b602090810291909101015290969095509350505050565b60008115806104165750508082028282828161041357fe5b04145b610467576040805162461bcd60e51b815260206004820152601860248201527f426f72696e674d6174683a204d756c204f766572666c6f770000000000000000604482015290519081900360640190fd5b92915050565b604080516001600160a01b038481166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b178152925182516000946060949389169392918291908083835b602083106104ea5780518252601f1990920191602091820191016104cb565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d806000811461054c576040519150601f19603f3d011682016040523d82523d6000602084013e610551565b606091505b509150915081801561057f57508051158061057f575080806020019051602081101561057c57600080fd5b50515b6105d0576040805162461bcd60e51b815260206004820152601c60248201527f426f72696e6745524332303a205472616e73666572206661696c656400000000604482015290519081900360640190fd5b505050505056fe4f6e6c79204d4356322063616e2063616c6c20746869732066756e6374696f6e2ea26469706673582212205e6207fff3b1da86e80d0d3cc4d9b94282b12ea3cbf992c9beb84780017fd45264736f6c634300060c0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
